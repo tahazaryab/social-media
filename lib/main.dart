@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/responsive/mobile_screen_layout.dart';
+import 'package:social_media/responsive/responsive_layout_screen.dart';
+import 'package:social_media/responsive/web_screen_layout.dart';
 import 'package:social_media/utils/colours.dart';
 
 void main() {
@@ -15,7 +18,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark()
           .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
       title: 'Flutter Demo',
-      home: Scaffold(body: Text("tests")),
+      home: const ResponsiveLayout(
+        mobileScreenLayout: MobileScreenLayout(),
+        webScreenLayout: WebScreenLayout(),
+      ),
     );
   }
 }
