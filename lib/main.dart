@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media/utils/colours.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark()
+          .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
       title: 'Flutter Demo',
-      home: Text("test"),
+      home: Scaffold(body: Text("tests")),
     );
   }
 }
