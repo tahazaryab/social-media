@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:social_media/pages/login_page.dart';
+import 'package:social_media/pages/signup_page.dart';
 import 'package:social_media/responsive/mobile_screen_layout.dart';
 import 'package:social_media/responsive/responsive_layout_screen.dart';
 import 'package:social_media/responsive/web_screen_layout.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark()
           .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
       title: 'Flutter Demo',
-      home: LoginPage(),
+      home: SignupPage(),
       /*
       home: const ResponsiveLayout(
         mobileScreenLayout: MobileScreenLayout(),
